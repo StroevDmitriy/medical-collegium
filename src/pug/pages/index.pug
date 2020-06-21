@@ -1,0 +1,76 @@
+html(lang="en")
+  head
+    include ../includes/head.pug
+    link(rel="stylesheet" href="css/vendor/slick.css")
+    link(rel="stylesheet" href="css/style.css")
+    title Главная
+  body.index
+    include ../includes/header.pug
+
+    main     
+      section.main-screen.d-block.d-md-flex
+        .service-block.item_1
+          .inner-block
+            a.desc-block(href="#")
+              .title Общее отделение услуг
+              .desc Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, perspiciatis repellendus. Atque dolor sequi amet voluptate cumque.
+            .services-list
+              .service-item.item_1
+                a(href="#") Терапия
+              .service-item.item_2
+                a(href="#") Педиатрия
+              .service-item.item_3
+                a(href="#") Акушерство и гинекология
+              .service-item.item_4
+                a(href="#") Стоматология
+              .service-item.item_5
+                a(href="#") Отоларингология
+              .service-item.item_6
+                a(href="#") Функциональная диагностика
+              .service-item.item_7
+                a(href="#") Офтальмология
+              .service-item.item_8
+                a(href="#") Ультразвуковая диагностика
+              .service-item.item_9
+                a(href="#") Хирургия
+              .service-item.item_10
+                a(href="#") Стоматологическая компьютерная томография
+              .service-item.item_11
+                a(href="#") Ортопедия и травматология
+              .service-item.item_12
+                a(href="#") Лабораторная диагностика
+              .service-item.item_13
+                a(href="#") Дерматология
+          
+          .bg-container
+            video(src="" loop="" muted="" autoplay="")
+            img(src="img/bg-services.jpg", alt="")
+            .layer(style="background-color: var(--title); opacity: .8")
+
+        .service-block.item_2
+          .inner-block
+            a.desc-block(href="#")
+              .title Психосоматика
+            .services-list
+              .service-item.item_1
+                a(href="#") Терапия
+              .service-item.item_2
+                a(href="#") Педиатрия
+
+          .bg-container
+            video(src="img/Clouds.mp4" loop="" muted="" autoplay="")
+            img(src="", alt="")
+            //- img(src="img/bg-psychosomatic.jpg", alt="")
+            .layer(style="background-color: var(--link); opacity: .8")
+
+      include ../includes/discount-section.pug
+
+      include ../includes/review-section.pug
+
+    include ../includes/footer.pug
+
+    include ../includes/modal.pug
+
+    script(src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js")
+    script(src="js/vendor/slick.min.js")

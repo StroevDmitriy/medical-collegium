@@ -1,0 +1,80 @@
+//- #modal-reg.modal.fade.show(aria-hidden='true' style="display: block; padding-right: 17px;" aria-modal="true")
+#modal-reg.modal.fade(aria-hidden='true')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        h5.modal-title Запись на прием
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+      .modal-body
+        form#reg-form
+          select(name="" placeholder="Выберите направление")
+            option(hidden selected data-name="default") Выберите направление
+            option(value="1" data-name="1") Врач 1
+            option(value="2" data-name="2") Врач 2
+            option(value="3" data-name="3") Врач 3
+          input(type="text" placeholder="Ваше имя")
+          input(type="tel" placeholder="Ваш номер телефона")
+          input(type="email" placeholder="Ваш e-mail")
+          .privacy-policy-block
+            input(type="checkbox" id="privacy-policy-reg")
+            label(for="privacy-policy-reg")
+              |Отправляя данную форму, вы соглашаетесь на обработку персональных данных в соответствии с политикой конфиденциальности
+          button Записаться на прием
+
+#modal-call-me.modal.fade(aria-hidden='true')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        h5.modal-title Заказать звонок
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+      .modal-body
+        form#call-me-form
+          input(type="text" placeholder="Ваше имя")
+          input(type="tel" placeholder="Ваш номер телефона")
+          .privacy-policy-block
+            input(type="checkbox" id="privacy-policy-call-me")
+            label(for="privacy-policy-call-me")
+              |Отправляя данную форму, вы соглашаетесь на обработку персональных данных в соответствии с политикой конфиденциальности
+          button Заказать звонок
+
+#modal-doctor-reg.modal.fade(aria-hidden='true')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        h5.modal-title Запись для докторов
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+      .modal-body
+        form#doctor-reg-form
+          input(type="text" placeholder="Ваше имя")
+          button Записаться
+
+#modal-major-msg.modal.fade(aria-hidden='true')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        h5.modal-title Написать директору
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+      .modal-body
+        form#major-msg-form
+          input(type="text" placeholder="Ваше имя")
+          input(type="email" placeholder="Ваш e-mail")
+          textarea(name="", cols="30", rows="10" placeholder="Введите сообщение")
+          button Отправить
+
+#modal-make-review.modal.fade(aria-hidden='true')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        h5.modal-title Оставить отзыв
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          span(aria-hidden='true') ×
+      .modal-body
+        form#make-review-form
+          input(type="text" placeholder="Ваше имя")
+          textarea(name="", cols="30", rows="10" placeholder="Введите сообщение")
+          button Отправить отзыв
+

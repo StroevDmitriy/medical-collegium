@@ -1,0 +1,14 @@
+section.appointment-reg-block
+  h2 Записаться на приём
+  .content
+    .container
+      form(action="")
+        input(type="text" placeholder="Ваше имя")
+        input(type="tel" placeholder="Ваш телефон")
+        button Записаться
+        .caution
+            input(type="checkbox" id="caution-input")
+            label(for="caution-input")
+              //- |Нажимая на кнопку, вы даете 
+              |Даю своё согласие на обработку своих персональных данных и соглашаюсь с 
+              a.privacy-policy-link(href="#") политикой конфиденциальности

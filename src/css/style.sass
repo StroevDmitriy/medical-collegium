@@ -1,0 +1,888 @@
+@font-face
+  font-family: 'Futura Book'
+  src: url('../fonts/futurabookc.ttf')
+  font-style: normal
+
+html,body,
+div,span,p,a,
+applet,
+object,
+iframe,
+h1,h2,h3,h4,h5,h6,
+blockquote,
+pre,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,u,i,center,
+dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,
+caption,table,tr,th,td,thead,tbody,tfoot,
+article,aside,canvas,details,embed,
+figure,figcaption,footer,header,hgroup,
+menu,nav,
+output,
+ruby,
+section,article,
+summary,
+time,
+mark,
+audio,video
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+	outline: none
+
+/* HTML5 display-role reset for older browsers */
+header,footer,section,article
+aside,
+details,
+figcaption,
+figure,
+hgroup,
+menu,nav
+	display: block
+
+*:not(.slick-track):not(.slick-list)
+	-webkit-transition: all .2s ease-in-out
+	transition: all .2s ease-in-out
+
+body
+	// padding-top: 0px
+
+	font-family: 'Ubuntu', sans-serif
+	line-height: 1
+
+	transition: all 0s!important
+	padding-top: 188px
+	// &.active
+
+blockquote,
+q
+	quotes: none
+
+ol,ul
+	list-style: none
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after
+	content: ''
+	content: none
+
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+a,
+a:visited
+	text-decoration: none
+	-webkit-transition: all .3s ease-in-out
+	transition: all .3s ease-in-out
+
+a:hover,
+a:visited:hover
+	text-decoration: none
+
+a:focus
+	outline: 0
+
+input
+	outline: none
+
+.ovh
+	overflow: hidden
+
+.section-title
+	padding: 20px 0px
+
+	font-family: Tenor Sans
+	font-size: 14px
+	text-align: center
+	text-transform: uppercase
+
+	background-color: #E6E6E6
+
+.green-btn
+	display: inline-flex
+	align-items: center
+	justify-content: center
+
+	color: #fff!important
+	font-size: 11px
+	font-weight: 400
+	letter-spacing: .5px
+	line-height: 1
+	text-transform: uppercase
+
+	background-color: var(--link)
+	@media (hover)//, (min-width:0\0)
+		&:hover
+			background-color: var(--title)
+
+.blue-btn
+	display: inline-flex
+	align-items: center
+	justify-content: center
+
+	color: #fff!important
+	font-size: 12px
+	font-weight: 400
+	text-transform: uppercase
+
+	background-color: var(--title)
+	@media (hover)//, (min-width:0\0)
+		&:hover
+			background-color: var(--link)
+
+.break
+  flex-basis: 100%
+  height: 0
+
+.breadcrumb-container
+	background-color: rgba(0,0,0,.3)
+	.breadcrumb
+		margin-bottom: 0px
+
+		padding: 16px 0px
+
+		background-color: transparent
+	.breadcrumb-item,
+	a
+		color: #fff
+		font-size: 12px
+		font-weight: 400
+		letter-spacing: .5px
+	a
+		@media (hover)//, (min-width:0\0)
+			&:hover
+				color: var(--link)
+	.breadcrumb-item
+		& + .breadcrumb-item
+			&::before
+				color: #fff
+
+.discount-section
+	.content
+		display: flex
+		flex-flow: column
+		padding: 44px 0px 68px
+		.discount-slider
+			position: relative
+			margin-bottom: 60px
+
+			z-index: 500
+			&::after,
+			&::before
+				position: absolute
+				top: 0px
+				content: ''
+				height: 100%
+				width: 30px
+
+				background-color: #fff
+
+				z-index: 500
+			&::before
+				left: 0px	
+			&::after
+				right: 0px
+		.slick-list
+			position: relative
+			width: calc(100%)
+		.slick-slide
+			padding: 0 30px
+		.slick-arrow
+			position: absolute
+			top: calc(125px - 27px)
+			height: 35px
+			width: 35px
+
+			font-size: 0px
+
+			border: 1px solid #C7C7C7
+
+			background-color: transparent
+			background-repeat: no-repeat
+			background-position: center
+			background-size: 20px 14px
+
+			cursor: pointer
+			outline: none
+			transition: all .3s
+			z-index: 900
+			@media (hover)//, (min-width:0\0)
+				&:hover
+					top: calc(125px - 29px)
+					height: 40px
+					width: 40px
+		.slick-prev
+			left: -22px
+
+			background-image: url(../img/arr_prev.svg)
+			@media (hover)//, (min-width:0\0)
+				&:hover
+					left: -27px
+		.slick-next
+			right: -22px
+
+			background-image: url(../img/arr_prev.svg)
+			
+			transform: rotate(180deg)
+			@media (hover)//, (min-width:0\0)
+				&:hover
+					right: -27px
+		.discount-card
+			width: 30%
+			.img-container
+				display: flex
+				height: 250px
+				width: 100%
+				margin-bottom: 14px
+
+				overflow: hidden
+				img
+					width: 100%
+					height: auto
+					object-fit: cover
+					object-position: center
+				@media (hover)//, (min-width:0\0)
+					&:hover
+						// .img-container
+						img
+							transform: scale(1.05)
+			.title
+				display: block
+
+				padding-bottom: 15px
+
+				border-bottom: 1px solid #E6E6E6
+
+				color: var(--title)
+				font-size: 18px
+				letter-spacing: 1px
+				line-height: 1.6
+				text-transform: uppercase
+				@media (hover)//, (min-width:0\0)
+					&:hover
+						color: var(--link)
+			.term
+				margin-bottom: 16px
+
+				color: #838383
+				font-size: 13px
+				font-weight: 100
+
+				padding-top: 9px
+			.details-btn
+				padding: 12px 36px
+
+				border-radius: 18px
+			// @media (hover)
+			// 	&:hover
+			// 		.img-container
+			// 			img
+			// 				transform: scale(1.05)
+		.all-discounts-btn
+			padding: 18px 68px
+			align-self: center
+			@media (hover)
+				&:hover
+					border-radius: 12px
+
+.review-section
+	padding: 0px 0px 70px
+	.content
+		padding-top: 60px
+	.review-list
+		display: flex
+		justify-content: space-between
+		margin-bottom: 55px
+		.slick-list
+			width: 100%
+		.slick-track
+			display: flex
+		.slick-arrow
+			position: absolute
+			top: calc(125px - 27px)
+			height: 35px
+			width: 35px
+
+			font-size: 0px
+
+			border: 1px solid #C7C7C7
+
+			background-color: transparent
+			background-repeat: no-repeat
+			background-position: center
+			background-size: 20px 14px
+
+			cursor: pointer
+			outline: none
+			transition: all .3s
+			z-index: 900
+			@media (hover)//, (min-width:0\0)
+				&:hover
+					top: calc(125px - 29px)
+					height: 40px
+					width: 40px
+		.slick-prev
+			left: -22px
+
+			background-image: url(../img/arr_prev.svg)
+			@media (hover)//, (min-width:0\0)
+				&:hover
+					left: -27px
+		.slick-next
+			right: -22px
+
+			background-image: url(../img/arr_prev.svg)
+			
+			transform: rotate(180deg)
+			@media (hover)//, (min-width:0\0)
+				&:hover
+					right: -27px
+	
+	.review-card
+		max-width: 310px
+		// width: 300px!important
+		.about-therapist
+			display: inline-flex
+			align-items: center
+			margin-bottom: 10px
+
+			padding-bottom: 28px
+			border-bottom: 1px solid #E6E6E6
+			.avatar
+				height: 53px
+				width: 53px
+				margin-right: 12px
+
+				border-radius: 27px
+
+				overflow: hidden
+				img
+					width: 100%
+					height: 100%
+					object-fit: cover
+					object-position: center
+			.info
+				color: #838383
+				font-size: 12px
+				font-style: italic
+				letter-spacing: 1px
+				line-height: 1.4
+			.spec
+				color: var(--link)
+			.name
+				color: var(--link)
+			@media (hover)//, (min-width:0\0)
+				&:hover
+					.avatar
+						img
+							transform: scale(1.1)
+					.name
+						color: var(--title)
+		.review-content
+			padding-bottom: 16px
+
+			border-bottom: 1px solid #E6E6E6
+
+			font-size: 15px
+			line-height: 2
+			p
+				margin-bottom: 24px
+		.show-review-btn
+			padding: 12px 36px
+
+			border-radius: 18px
+		.reviewer-info
+			display: flex
+			justify-content: space-between
+			align-items: center
+
+			padding: 10px 0px
+			flex-flow: wrap
+
+			font-style: italic
+			.name
+				margin-bottom: 10px
+				
+				font-size: 12px
+				letter-spacing: 1px
+			.date
+				font-size: 10px
+				text-transform: uppercase
+		&:nth-child(2)
+			margin: 0px auto
+	.btns-block
+		display: flex
+		justify-content: center
+		a
+			padding: 18px 10px
+			@media (hover)//, (min-width:0\0)
+				&:hover
+					border-radius: 12px
+					// background-color: inherit
+		.all-reviews-btn
+			width: 205px
+			margin-right: 28px
+			// @media (hover)
+			// 	&:hover
+			// 		background-color: var(--link)
+		.make-review-btn
+			width: 205px
+			// @media (hover)
+			// 	&:hover
+			// 		background-color: var(--title)
+
+.appointment-reg-block
+	h2
+		padding: 23px 0px
+
+		font-family: Tenor Sans
+		font-size: 20px
+		text-align: center
+		text-transform: uppercase
+	.content
+		padding: 60px 0px 40px
+		background-color: #E6E6E6
+	form
+		display: flex
+		// margin-bottom: 40px
+		flex-flow: wrap
+		justify-content: space-between
+	input
+		width: 35%
+		padding: 19px 10px 19px 35px
+
+		border: none
+		border-radius: 28px
+
+		background-color: #fff
+
+		font-size: 16px
+		font-weight: 100
+		letter-spacing: 1px
+
+		outline: none
+	button
+		width: 20%
+
+		border: none
+		border-radius: 28px
+
+		background-color: var(--link)
+
+		color: #fff
+		font-size: 15px
+		font-weight: 500
+		letter-spacing: 1px
+		text-transform: uppercase
+
+		cursor: pointer
+		outline: none
+		@media (hover)//, (min-width:0\0)
+			&:hover
+				background-color: var(--title)
+	.caution
+		width: 100%
+		// margin-bottom: 40px
+		margin-top: 40px
+
+		font-size: 13px
+		font-weight: 100
+		letter-spacing: .5px
+
+		user-select: none
+		label
+			position: relative
+			// display: flex
+			// align-items: center
+
+			padding-left: 30px
+
+			line-height: 1.4
+			&::before
+				position: absolute
+				content: ''
+				height: 17px
+				width: 17px
+				// height: 12px
+				// width: 12px
+				top: 0px
+				left: 0px
+
+				border: 1px solid #000
+				// border-radius: 6px
+				border-radius: 9px
+			&::after
+				position: absolute
+				content: ''
+				// height: 6px
+				// width: 6px
+				height: 9px
+				width: 9px
+				// top: 6px
+				top: 4px
+				// left: 3px
+				left: 4px
+
+				// border: 1px solid #000
+				// border-radius: 3px
+				border-radius: 12px
+				
+				
+		input[type="checkbox"]
+			display: none
+			&:checked ~ label::after
+				background-color: var(--title)
+				
+	.privacy-policy-link
+		color: var(--link)
+		text-decoration: underline
+		@media (hover)//, (min-width:0\0)
+			&:hover
+				text-decoration: none
+
+.doctors-section
+	display: flex
+
+	flex-flow: column
+	padding-bottom: 40px
+	.doctors-list
+		display: flex
+
+		flex-flow: wrap
+		justify-content: center
+	.doctor-card
+		display: flex
+		justify-content: center
+		width: 50%
+		min-width: 50%
+
+		.img-container
+			position: relative
+			display: flex
+			min-height: 340px
+			min-width: 50%
+			max-width: 336px
+			width: 100%
+
+			// height: 355px
+			// width: 350px
+			img
+				position: absolute
+				height: 100%
+				width: 100%
+
+				object-fit: cover
+				object-position: center
+				& + img
+					opacity: 0
+					transition: all .5s
+		@media (hover)//, (min-width:0\0)
+			&:hover
+				.img-container
+					img + img
+						opacity: 1
+		.info-block
+			display: flex
+			max-width: 360px
+
+			flex-flow: column
+			align-items: flex-start
+			justify-content: center
+			padding: 26px
+			flex-grow: 1
+		h3
+			position: relative
+			margin-top: auto
+
+			padding-bottom: 10px
+
+			font-family: 'Tenor Sans'
+			font-size: 20px
+			line-height: 1.6
+			&::after
+				position: absolute
+				content: ''
+				height: 1px
+				width: 140px
+				bottom: 0px
+				left: 0px
+
+				background-color: #D9D9D9
+		.reg-btn
+			min-width: 200px
+			margin-top: auto
+			
+			padding: 18px 10px
+		.specialization
+			margin-bottom: 20px
+
+			padding-top: 14px
+
+			font-size: 12px
+			font-style: italic
+			letter-spacing: 1px
+		&:nth-child(4n+3),
+		&:nth-child(4n+4)
+			.info-block
+				background-color: #D9D9D9
+	.show-doctors-btn
+		min-width: 200px
+		padding: 18px
+		align-self: center
+		@media (hover)
+			&:hover
+				border-radius: 12px
+
+.gallery-section
+	.slick-track
+		display: flex
+	.photo-slider
+		position: relative
+		width: 100%
+
+		overflow: hidden
+	.item
+		display: flex
+		position: relative
+
+		min-height: 502px
+		max-height: 502px
+		img
+			height: 100%
+			width: 100%
+			
+			object-fit: cover
+			object-position: center
+		.desc
+			position: absolute
+			bottom: 0px
+			left: 0px
+			display: inline-flex
+			min-width: 200px
+			
+			opacity: 0
+
+			transition: all .3s
+			.name
+				bottom: 0px
+				left: 0px
+				padding: 7px 10px 7px 27px
+
+				color: #fff
+				font-size: 12px
+				font-weight: 400
+				text-transform: uppercase
+
+				z-index: 100
+
+			&::after
+				position: absolute
+				content: ''
+				height: 100%
+				width: 100%
+				bottom: 0px
+				left: 0px
+
+				background-color: #24396E
+				mix-blend-mode: multiply
+
+		&::after
+			position: absolute
+			content: ''
+			height: 100%
+			width: 100%
+			background-color: transparent
+
+			transition: all .3s
+		&.slick-slide
+			height: auto
+			transition: all .3s
+			&::after
+				background-color: #24396E
+				mix-blend-mode: multiply
+		&.slick-active
+			width: 30vw!important
+		&.slick-current + .slick-active
+			width: 40vw!important
+			.desc
+				opacity: 1
+			&::after
+				background-color: unset
+		
+	.slick-arrow
+		position: absolute
+		height: 35px
+		width: 35px
+		top: calc(50% - 17px)
+
+		font-size: 0px
+
+		border: 1px solid #426ad2
+
+		background-color: transparent
+		background-position: center
+		background-repeat: no-repeat
+		background-size: 19px 14px
+
+		outline: none
+		z-index: 500
+		@media (hover)//, (min-width:0\0)
+			&:hover
+				height: 39px
+				width: 39px
+				top: calc(50% - 19px)
+	.slick-prev
+		left: 20%
+		background-image: url(../img/arrow-left-blue.svg)
+		@media (hover)//, (min-width:0\0)
+			&:hover
+				left: calc(20% - 2px)
+	.slick-next
+		right: 20%
+		background-image: url(../img/arrow-left-blue.svg)
+		transform: rotate(180deg)
+		@media (hover)//, (min-width:0\0)
+			&:hover
+				right: calc(20% - 2px)
+
+.service-block
+	.services-list
+		flex-flow: wrap
+		justify-content: space-between
+		.service-item
+			display: flex
+			min-height: 51px
+			// width: 40%
+			width: 45%
+			margin-right: 20px
+			margin-bottom: 16px
+
+			align-items: center
+
+			padding-left: 62px
+
+			background-position: left 2px center
+			background-repeat: no-repeat
+			background-size: 47px
+			&:last-child
+				margin-bottom: 0px
+			a
+				position: relative
+				// max-width: 250px
+
+				padding-right: 20px
+				
+				color: #fff
+				letter-spacing: 1px
+				line-height: 1.6
+				text-transform: uppercase
+				&::after
+					display: inline-block
+					position: relative
+					content: ''
+					height: 15px
+					width: 8px
+					// top: calc(50% - 7px)
+					margin-left: 14px
+					top: 2px
+					right: 0px
+
+					background-image: url(../img/arrow-right-w.svg)
+					background-repeat: no-repeat
+					background-position: right center
+					background-size: 8px 15px
+
+					transition: all .3s
+			&.item_1
+				background-image: url(../img/service_1.svg)
+			&.item_2
+				background-image: url(../img/service_2.svg)
+			&.item_3
+				background-image: url(../img/service_3.svg)
+			&.item_4
+				background-image: url(../img/service_4.svg)
+			&.item_5
+				background-image: url(../img/service_5.svg)
+			&.item_6
+				background-image: url(../img/service_6.svg)
+			&.item_7
+				background-image: url(../img/service_7.svg)
+			&.item_8
+				background-image: url(../img/service_8.svg)
+			&.item_9
+				background-image: url(../img/service_9.svg)
+			&.item_10
+				background-image: url(../img/service_10.svg)
+			&.item_11
+				background-image: url(../img/service_11.svg)
+			&.item_12
+				background-image: url(../img/service_12.svg)
+			&.item_13
+				background-image: url(../img/service_13.svg)
+			@media (hover)//, (min-width:0\0)
+				&:hover
+					background-position-x: 0px
+					background-size: 51px
+					a
+						&::after
+							right: -3px
+
+\:root
+	--main: #707070
+	--hover: #9FC058
+	--title: #2858C7
+	--link: #1EB5AF
+// $golden: #98772E
+// $main: #5E1D47
+// $hover: #DE97D0
+// $dark: #250218
+
+@import _header.sass
+@import _footer.sass
+@import index.sass
+@import services.sass
+@import doctor-card.sass
+@import contacts.sass
+@import about.sass
+
+@import modal.sass
+
+body.modal-open
+	header
+		padding-right: 17px
+		// width: calc(100% - 17px)
+
+		// transition: all 0s
+
+@import 1200.sass
+@import 992.sass
+@import 768.sass
+@import 576.sass

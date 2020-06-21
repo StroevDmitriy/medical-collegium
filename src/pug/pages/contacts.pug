@@ -1,0 +1,85 @@
+html(lang="en")
+  head
+    include ../includes/head.pug
+    link(rel="stylesheet" href="css/vendor/slick.css")
+    link(rel="stylesheet" href="css/style.css")
+    title Контакты
+  body.contacts-page
+    include ../includes/header.pug
+
+    main
+      section.breadcrumb-container
+        .container
+          .breadcrumb
+            li.breadcrumb-item
+              a(href="#") Главная
+            li.breadcrumb-item  Контакты
+
+      section.main-screen
+        .img-container
+          img(src="img/house.jpg", alt="")
+        .container
+          .content
+            .content-item.adress-block
+              .title Адрес:
+              .info г Санкт-Петербург
+                br
+                |М. Невский Проспект
+                br
+                |Невский Пр. 47
+            .content-item.schedule-block
+              .title Режим Работы:
+              .info Пн-Пт: С 08:00 До 21:00
+                br
+                |Пн-Пт: С 09:00 До 18:00
+            .break.d-block.d-md-none
+            .content-item.tel-block
+              .title Телефон:
+              .info 8 (800) 654 89 70
+            .content-item.route-block
+              .title Как Добраться:
+              .info
+                .item
+                  .item_title От станции м. Парк Победы
+                  .item_info маршруткой № к-254
+                    br
+                    |до остановки Невский проспект
+                    br
+                    |(7 остановок)
+                .item
+                  .item_title От станции м. Невский
+                  .item_info маршруткой № к-254
+                    br
+                    |до остановки Невский проспект
+                    br
+                    |(7 остановок)
+            .break
+            .content-item.email-block
+              .title E-mail:
+              .info Clinic@Clinic.Com
+            .content-item.btns-block
+              a.blue-btn.reg-btn(href="#") Записаться на приём
+              a.blue-btn.manager-msg-btn(href="") Написать директору
+            
+            .content-item.soc-block
+              a(href="#").soc-item
+                img(src="img/logo-vk.svg", alt="")
+              a(href="#").soc-item
+                img(src="img/logo-inst.svg", alt="")
+              a(href="#").soc-item
+                img(src="img/logo-fb.svg", alt="")
+              a(href="#").soc-item
+                img(src="img/logo-youtube.svg", alt="")
+              a(href="#").soc-item
+                img(src="img/logo-twitter.svg", alt="")
+
+      section.map-section(style="display:flex; justify-content: center; align-items: center; border: 1px solid red; height: 300px") Карта
+
+
+    include ../includes/footer.pug
+
+    include ../includes/modal.pug
+
+    script(src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js")
+    script(src="js/vendor/slick.min.js")

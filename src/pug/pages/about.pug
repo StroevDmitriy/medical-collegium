@@ -1,0 +1,123 @@
+html(lang="en")
+  head
+    include ../includes/head.pug
+    link(rel="stylesheet" href="css/vendor/slick.css")
+    link(rel="stylesheet" href="css/style.css")
+    title О нас
+  body.about-us-page
+    main
+      include ../includes/header.pug
+      
+      section.main-screen
+        .breadcrumb-container
+          .container
+            ol.breadcrumb
+              li.breadcrumb-item
+                a(href="#") Главная
+              li.breadcrumb-item О нас
+
+        .content
+          .container.d-flex
+            .desc-block
+              h1 О медицинской коллегии
+              p Организация медицинского бизнеса всегда считалась непростой задачей, с которой под силу справиться немногим, ведь, чтобы преуспеть на рынке, в условиях жесткой конкуренции, нужна стратегическая идея, нужна харизма основателя, и, очень важно - настойчивость, уверенность в успехе и вера в свои силы.
+
+      section.advantages-section
+        .container
+          h2.big-title Почему пациенты выбирают "Медицинскую коллегию":
+          .advantages-list
+            .item
+              p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit consequatur aperiam veritatis, magnam commodi laborum facilis rem repellat facere laboriosam.
+            .item
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente obcaecati facere modi officia hic ipsa, repudiandae necessitatibus ratione odit reiciendis?
+            .item
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi excepturi corrupti magni incidunt illo doloribus dignissimos tempora dicta, porro provident.
+
+      include ../includes/gallery-section.pug
+
+      section.equipment-section
+        h2.section-title Оборудование
+        .container
+          .equipment-slider
+            .item
+              .img-container
+                img(src="img/equip.jpg", alt="")
+              .desc Lorem, ipsum dolor.
+              .department Отделение стоматологии
+            .item
+              .img-container
+                img(src="img/gallery_1.jpg", alt="")
+              .desc Lorem, ipsum dolor.
+              .department Отделение стоматологии
+            .item
+              .img-container
+                img(src="img/equip.jpg", alt="")
+              .desc Lorem, ipsum dolor.
+              .department Отделение стоматологии
+            .item
+              .img-container
+                img(src="img/equip.jpg", alt="")
+              .desc Lorem, ipsum dolor.
+              .department Отделение стоматологии
+            .item
+              .img-container
+                img(src="img/gallery_1.jpg", alt="")
+              .desc Lorem, ipsum dolor.
+              .department Отделение стоматологии
+
+      section.department-section
+        h2.big-title Наши отделения
+        .tmblr-row
+          .container
+            .tmblr-item.gen-department-tmblr.active(data-num="1") Общее отделение услуг
+            .tmblr-item.psychosomatic-tmblr(data-num="2") Психосоматика
+        .tab-row.service-block
+          .container
+            .tab-item(data-num="1")
+              .services-list
+                .service-item.item_1
+                  a(href="#") Терапия
+                .service-item.item_2
+                  a(href="#") Педиатрия
+                .service-item.item_3
+                  a(href="#") Акушерство и гинекология
+                .service-item.item_4
+                  a(href="#") Стоматология
+                .service-item.item_5
+                  a(href="#") Отоларингология
+                .service-item.item_6
+                  a(href="#") Функциональная диагностика
+                .service-item.item_7
+                  a(href="#") Офтальмология
+                .service-item.item_8
+                  a(href="#") Ультразвуковая диагностика
+                .service-item.item_9
+                  a(href="#") Хирургия
+                .service-item.item_10
+                  a(href="#") Стоматологическая компьютерная томография
+                .service-item.item_11
+                  a(href="#") Ортопедия и травматология
+                .service-item.item_12
+                  a(href="#") Лабораторная диагностика
+                .service-item.item_13
+                  a(href="#") Дерматология
+            .tab-item(data-num="2")
+              .services-list
+                .service-item.item_1
+                  a(href="#") Услуга 1
+                .service-item.item_2
+                  a(href="#") Услуга 2
+                .service-item.item_3
+                  a(href="#") Услуга 3
+
+
+      include ../includes/reg-block.pug
+
+    include ../includes/footer.pug
+
+    include ../includes/modal.pug
+
+    script(src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js")
+    script(src="js/vendor/slick.min.js")
+    

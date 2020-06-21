@@ -1,0 +1,62 @@
+@media screen and ( max-width: 1199px )
+  .discount-section
+    .content
+      .discount-slider
+        margin-left: 15px
+        margin-right: 15px 
+
+  .review-section
+    .review-card
+      max-width: 270px
+
+  .doctors-section
+    .doctor-card
+      .info-block
+        padding: 20px
+      h3
+        line-height: 1.4
+      .reg-btn
+        padding: 12px 4px
+
+  .gallery-section
+    .item.slick-active
+      width: 25vw!important
+    .item.slick-current + .slick-active
+      width: 50vw!important
+    .slick-prev
+      left: 15%
+      @media (hover)//, (min-width:0\0)
+        &:hover
+          left: calc(15% - 2px)
+    .slick-next
+      right: 15%
+      @media (hover)//, (min-width:0\0)
+        &:hover
+          right: calc(15% - 2px)
+  
+  .index
+    .main-screen
+      @media (hover) and (min-width: 992px)//, (min-width:0\0) and (min-width: 992px)
+        &:hover
+          .service-block.item_1
+            &:hover
+              .inner-block
+                padding-left: calc((100vw - 950px)/2)
+      @media (hover) and (max-width: 992px)//, (min-width:0\0) and (min-width: 992px)
+        .service-block
+          .inner-block
+            &:hover
+              .title
+                &::after
+                  right: -5px
+
+  .doctor-card-page
+    .doctors-section
+      .doctor-card
+        .img-container
+          min-height: 220px
+          min-width: 42%
+        h3
+          font-size: 18px
+
+  

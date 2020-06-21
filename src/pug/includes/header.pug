@@ -1,0 +1,60 @@
+header.header
+  .main-row
+    .container.d-flex
+      .logo-block
+        a(href="#").d-flex
+          .logo-img-container
+            img(src="img/logo.svg", alt="")
+          .logo-title Медицинская коллегия
+      .schedule-block.d-none.d-lg-block Контактный центр:
+        br
+        |пн-сб: 8:00-21:00
+        br
+        |вс: 9:00-21:00
+      .tel-block.d-none.d-lg-flex
+        a(href="tel:8(800)6548970").tel-link 8 (800) 654 89 70
+        a(href="#modal-call-me" data-toggle="modal").call-me-link Позвоните мне
+      a.enroll-button.blue-btn.d-none.d-md-block(href="#modal-reg" data-toggle="modal") Записаться на прием
+      #burger-button.burger-button.d-flex.d-lg-none
+        span
+  .nav-row
+    .container
+      nav.main-nav
+
+        .logo-block.d-flex.d-lg-none
+          a(href="#").d-flex
+            .logo-img-container
+              img(src="img/logo.svg", alt="")
+
+        ul.d-flex
+          li
+            a(href="services.html#gallery-section") Отделения
+          li
+            a(href="services.html#discount-section") Акции
+          li
+            a(href="services.html#doctors-section") Врачи
+          li.submenu
+            a(href="#") Полезно
+            ul
+              li
+                a(href="#") Подменю 1
+              li
+                a(href="#") Подменю 2
+          li
+            a(href="about.html") О нас
+          li
+            a(href="services.html#review-section") Отзывы
+          li
+            a(href="contacts.html") Контакты
+        .schedule-block.d-block.d-lg-none Контактный центр:
+          br
+          |пн-сб: 8:00-21:00
+          br
+          |вс: 9:00-21:00
+        .tel-block.d-flex.d-lg-none
+          a(href="tel:8(800)6548970").tel-link.d-inline-flex 8 (800) 654 89 70
+          a(href="#modal-call-me" data-toggle="modal").call-me-link.d-inline-flex Позвоните мне
+        a.enroll-button.blue-btn.d-inline-flex.d-md-none(href="#modal-reg" data-toggle="modal") Записаться на прием
+
+
+

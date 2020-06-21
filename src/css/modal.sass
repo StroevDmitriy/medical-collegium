@@ -1,0 +1,166 @@
+.modal
+  &-dialog
+    max-width: 700px
+
+  &-content
+    padding: 75px 20px 120px
+
+    border: none
+
+  &-header
+    display: flex
+    margin-bottom: 74px
+
+    padding: 0px
+    justify-content: center
+
+    border-bottom: none
+    .close
+      position: absolute
+      display: flex
+      right: 24px
+      top: 20px
+      height: 30px
+      width: 30px
+      margin: 0px
+
+      padding: 0px
+
+      font-size: 0px
+
+      opacity: 1
+      outline: none
+      span
+        position: absolute
+        width: calc(100% * 1.4)
+        height: 5px
+        top: 12px
+        right: -6px
+
+        background-color: #838383
+
+        transform: rotate(45deg)
+        &::after
+          position: absolute
+          content: ''
+          top: 0px
+          left: 0px
+          
+          width: 100%
+          height: 5px
+
+          background-color: #838383
+
+          transform: rotate(90deg)
+
+  &-title
+    font-family: Tenor Sans
+    font-size: 19px
+    letter-spacing: 1px
+    text-align: center
+    text-transform: uppercase
+
+  &-body
+    padding: 0px
+    form
+      display: flex
+      max-width: 400px
+      margin: auto
+
+      flex-flow: column
+      select,
+      input,
+      textarea
+        margin-bottom: 26px
+
+        padding: 18px 20px 18px 30px
+
+        font-size: 16px
+        font-weight: 100
+
+        border: none
+        border-radius: 28px
+
+        background-color: #e6e6e6
+
+        outline: none
+      label
+        input
+          margin-bottom: 0px
+      select
+        // display: inline-block
+
+        // position: relative
+        // padding-right: 25px
+
+        -webkit-appearance: none
+        -moz-appearance: none
+        appearance: none
+
+        background-image: url(../img/arrow-bottom.svg)
+        background-repeat: no-repeat
+        background-size: 16px 8px
+        background-position: right 20px top 55%
+        &:first-child
+          color: rgba(0,0,0,.6)
+      .privacy-policy-block
+        input
+          display: none
+        label
+          position: relative
+          margin-bottom: 30px
+
+          padding-left: 30px
+
+          font-size: 11px
+          line-height: 2
+
+          user-select: none
+          &::after
+            position: absolute
+            content: ''
+            height: 17px
+            width: 17px
+            top: 5px
+            left: 0px
+
+            border: 1px solid #000
+            border-radius: 10px
+          &::before
+            position: absolute
+            content: ''
+            height: 9px
+            width: 9px
+            top: 9px
+            left: 4px
+
+            background-color: transparent
+            // border: 1px solid #000
+            border-radius: 12px
+        input:checked ~ label::before
+          background-color: var(--title)
+      button
+        width: 100%
+
+        padding: 18px 20px
+
+        color: #fff
+        font-size: 12px
+        font-weight: 500
+        letter-spacing: 1px
+        text-transform: uppercase
+
+        background-color: var(--title)
+
+        border: none
+        border-radius: 30px
+
+        outline: none
+        @media (hover)//, (min-width:0\0)
+          &:hover
+            background-color: var(--link)
+
+   
+  &-footer
+    border: none
+

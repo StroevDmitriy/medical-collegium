@@ -1,0 +1,161 @@
+html(lang="en")
+  head
+    include ../includes/head.pug
+    link(rel="stylesheet" href="css/vendor/slick.css")
+    link(rel="stylesheet" href="css/style.css")
+    title Услуги
+  body.services-page
+    main
+      include ../includes/header.pug
+      
+      section.main-screen
+        .breadcrumb-container
+          .container
+            ol.breadcrumb
+              li.breadcrumb-item
+                a(href="#") Главная
+              li.breadcrumb-item
+                a(href="#") Общее отделение услуг
+              li.breadcrumb-item Терапия
+
+        .content
+          .container.d-flex
+            .desc-block
+              h1 Терапия
+              p - процесс, целью которого является облегчение, снятие или устранение симптомов и проявлений того или иного заболевания или травмы, патологического состояния или иного нарушения жизнедеятельности, нормализация нарушенных процессов жизнедеятельности и выздоровление, восстановление здоровья.
+            .info-block
+              .question-title Первый раз на приём?
+              a.details-link.green-btn(href="#first-appointment") Подробнее
+
+      section.services-section#services-section
+        h2.section-title Услуги
+        .container
+          .services-list.d-flex
+            .service-card
+              .img-container
+                img(src="img/service-bg_1.jpg", alt="")
+              h3 Лечение простудных заболеваний
+            .service-card
+              .img-container
+                img(src="img/service-bg_2.jpg", alt="")
+              h3 Лечение гриппа
+            .service-card
+              .img-container
+                img(src="img/service-bg_3.jpg", alt="")
+              h3 Лечение ОРВИ
+            .service-card
+              .img-container
+                img(src="img/service-bg_4.jpg", alt="")
+              h3 Лечение заболеваний дыхательных путей
+            .service-card
+              .img-container
+                img(src="img/service-bg_5.jpg", alt="")
+              h3 Лечение инфекционных болезней
+            .service-card
+              .img-container
+                img(src="img/service-bg_6.jpg", alt="")
+              h3 Выдача листка нетрудоспособности
+            .service-card
+              .img-container
+                img(src="img/service-bg_5.jpg", alt="")
+              h3 Лечение инфекционных болезней
+            .service-card
+              .img-container
+                img(src="img/service-bg_6.jpg", alt="")
+              h3 Выдача листка нетрудоспособности
+
+      section.prices-section#prices-section
+        h2.section-title Цены
+        .container
+          .prices-table
+            table
+              thead
+                tr
+                  th №
+                  th Название услуги
+                  th Цена
+              tbody
+                tr
+                  td 1
+                  td Узи брюшной полости
+                  td 2 000 р.
+                tr
+                  td 2
+                  td Узи брюшной полости
+                  td 2 000 р.
+                tr
+                  td 3
+                  td Узи брюшной полости
+                  td 2 000 р.
+                tr
+                  td 4
+                  td Узи брюшной полости
+                  td 2 000 р.
+          a.price-link.green-btn(href="#") Посмотреть весь прайс-лист
+
+      section.doctors-section#doctors-section
+        h2.section-title Врачи
+        .doctors-list
+          .doctor-card
+            .img-container
+              img(src="img/doctor_1.jpg", alt="")
+              img(src="img/doctor_2.jpg", alt="")
+            .info-block
+              h3 Врач 1
+              .specialization Кардиолог, Терапевт, Врач УЗД
+              a.blue-btn.reg-btn(href="#modal-reg" data-toggle="modal" data-name="1") Записаться на приём
+          .doctor-card
+            .img-container
+              img(src="img/doctor_2.jpg", alt="")
+              img(src="img/doctor_1.jpg", alt="")
+            .info-block
+              h3 Врач 2
+              .specialization Кардиолог, Терапевт, Врач УЗД
+              a.blue-btn.reg-btn(href="#modal-reg" data-toggle="modal" data-name="2") Записаться на приём
+          .doctor-card
+            .img-container
+              img(src="img/doctor_2.jpg", alt="")
+              img(src="img/doctor_1.jpg", alt="")
+            .info-block
+              h3 Врач 3
+              .specialization Кардиолог, Терапевт, Врач УЗД
+              a.blue-btn.reg-btn(href="#modal-reg" data-toggle="modal" data-name="3") Записаться на приём
+          .doctor-card
+            .img-container
+              img(src="img/doctor_1.jpg", alt="")
+              img(src="img/doctor_2.jpg", alt="")
+            .info-block
+              h3 Врач 4
+              .specialization Кардиолог, Терапевт, Врач УЗД
+              a.blue-btn.reg-btn(href="#modal-reg" data-toggle="modal" data-name="4") Записаться на приём
+        a.green-btn.show-doctors-btn(href="#") Все врачи
+
+      include ../includes/gallery-section.pug
+
+      include ../includes/discount-section.pug
+
+      include ../includes/review-section.pug
+
+      section#first-appointment.first-appointment.d-flex
+        .section-img
+          img(src="img/first-appointment.jpg", alt="")
+        .content-block
+          h2 Первый раз на приём?
+          .par
+            p На первом приёме врач большую часть времени тратит на знакомство с пациентом. Он собирает анамнез заболевания - анализирует жизненную ситуацию, окружение, оценивает эмоциональное состояние. Врач расспрашивает пациента о прошлом, его работе, семье, планах на будущее.
+            ul
+              li 1. Lorem ipsum dolor sit amet.
+              li 2. Lorem ipsum dolor sit amet.
+              li 3. Lorem ipsum dolor sit amet.
+              li 4. Lorem ipsum dolor sit amet.
+      
+      include ../includes/reg-block.pug
+
+    include ../includes/footer.pug
+
+    include ../includes/modal.pug
+
+    script(src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js")
+    script(src="js/vendor/slick.min.js")
+    

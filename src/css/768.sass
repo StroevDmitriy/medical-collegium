@@ -1,0 +1,225 @@
+@media screen and ( max-width: 767px )
+  .header
+    .tel-block
+      margin-bottom: 40px
+    .nav-row
+      .enroll-button
+        margin-bottom: auto
+  
+  .footer
+    .contacts-row
+      .contact-block
+        margin-bottom: 40px
+
+  .modal-dialog
+    max-width: 500px
+
+  .index
+    .main-screen
+      .service-block
+        width: 100%
+
+        min-height: 380px
+
+  .appointment-reg-block
+    form
+      flex-flow: column
+      align-items: center
+      input
+        width: 100%
+        margin-bottom: 20px
+      button
+        order: 2
+        // margin-bottom: 40px
+        // margin-top: 0px
+        min-width: 200px
+
+        padding: 20px
+    .caution
+      margin-top: 0px
+      margin-bottom: 40px
+
+  .review-section
+    .review-card
+      width: auto
+
+  .gallery-section
+    .slick-list
+      position: relative
+      &::after,
+      &::before
+        position: absolute
+        content: ''
+        height: 100%
+        width: 10%
+        top: 0px
+
+        background-color: #24396E
+        mix-blend-mode: multiply
+
+        z-index: 5000
+      &::after
+        right: 0px
+      &::before
+        left: 0px
+    .item
+      .desc
+        display: flex
+        position: relative
+        top: -23px
+
+        justify-content: center
+        .name
+          padding: 7px 10px
+      &.slick-active
+        width: auto
+        
+        display: flex
+        flex-flow: column
+        align-items: center
+      &.slick-slide
+        &::after
+          display: none
+      &.slick-current
+        position: relative
+        width: 100vw!important
+        .desc
+          opacity: 1
+        & + .slick-active
+          width: auto
+          .desc
+            opacity: 0
+    .slick-next
+      right: calc(5% - 17px)
+      @media (hover)//, (min-width:0\0)
+        &:hover
+          right: calc(5% - 19px)
+    .slick-prev
+      left: calc(5% - 17px)
+      @media (hover)//, (min-width:0\0)
+        &:hover
+          left: calc(5% - 19px)
+
+  .discount-section
+    .content
+      .discount-slider
+        &::after
+          right: -17px
+        &::before
+          left: -17px
+
+  .doctors-section
+    .doctor-card
+      .info-block
+        max-width: unset
+
+  .services-page
+    .services-section
+      .services-list
+        .service-card
+          width: 48%
+          margin: 0px 1% 40px
+    .prices-section
+      .item_price
+        padding: 26px 10px
+      .prices-table
+        td,
+        th
+          &:nth-child(3)
+            padding-left: 12px
+
+    .first-appointment
+      margin-bottom: 0px
+
+      flex-flow: column
+      padding-bottom: 0px
+      .section-img
+        width: 100%
+        position: static
+      .content-block
+        width: 100%
+        margin-left: 0px
+        top: 0px
+
+        padding: 40px
+    
+  .doctor-card-page
+    .card-section
+      .left-col
+        .review-block
+          width: 100%
+          margin-bottom: 40px
+      .right-col
+        .title-block
+          padding: 40px 20px
+        .consult-row
+          margin-left: 0px
+        .about-doctor-block
+          margin-left: 0px
+          .theme-block
+            padding: 0px 15px
+    .doctors-section
+      .doctor-card
+        flex-flow: column
+        .img-container
+          max-width: unset
+          height: 390px
+          
+  .contacts-page
+    .main-screen
+      .img-container
+        position: relative
+        width: 540px
+        margin: auto
+      .content
+        width: 100%
+        
+        padding-left: 0px
+      .content-item
+        &.route-block
+          width: 100%
+          .info
+            justify-content: space-between
+            .item
+              width: 205px
+        &.item-block,
+        &.schedule-block
+          width: 205px
+
+  .about-us-page
+    .main-screen
+      .content
+        .desc-block
+          padding-right: 0px
+    .department-section
+      .tmblr-row
+        .container
+          flex-flow: column
+      .tmblr-item
+        margin-right: 0px
+        &:not(:last-child)
+          margin-bottom: 20px
+      .services-list
+        flex-flow: column
+        align-items: center
+        .service-item
+          width: 80%
+          margin-right: 0px
+    .equipment-section
+      .equipment-slider
+        width: 80%
+        .item
+          .img-container
+            min-height: unset
+            height: 500px
+    .advantages-section
+      .advantages-list
+        flex-flow: column
+        align-items: center
+        .item
+          width: 90%
+          margin-bottom: 40px
+
+
+          
+

@@ -1,0 +1,266 @@
+.doctor-card-page
+  .breadcrumb-container
+    a
+      @media (hover)
+        &:hover
+          color: var(--title)
+      
+  h1
+    font-family: Tenor Sans
+    font-size: 25px
+    letter-spacing: 2px
+    text-transform: uppercase
+
+    margin-bottom: 20px
+
+  .card-section
+    margin-bottom: 80px
+    .main-info
+      margin-bottom: 40px
+    .left-col
+      .img-container
+        position: relative
+        margin-bottom: 20px
+        img,
+        video
+          width: 100%
+          height: 100%
+
+          object-fit: contain
+          object-position: center
+
+          transition: all .5s
+        img ~ img,
+        img ~ video
+          position: absolute
+          opacity: 0
+          top: 0px
+          left: 0px
+
+          object-fit: contain
+          object-position: center
+        img ~ video
+          object-fit: cover
+
+        img[src=""],
+        video:not([src=""]) + img
+          display: none
+        video[src=""]
+          display: none
+        video[src=""] + img[src=""] + .layer
+          position: absolute
+          top: 0px
+          left: 0px
+
+          height: 100%
+          width: 100%
+        @media (hover)
+          &:hover
+            img
+              opacity: 0
+              & ~ img,
+              & ~ video
+                opacity: 1
+
+      .review
+        &-block
+          display: flex
+          width: 80%
+
+          padding: 0px 20px
+          flex-flow: column
+          align-items: center
+          .title
+            width: 100%
+            margin-bottom: 25px
+
+            padding: 20px
+
+            font-family: Tenor Sans
+            font-size: 14px
+            text-transform: uppercase
+
+            border-bottom: 1px solid #E6E6E6
+          .make-review-btn,
+          .all-reviews-btn
+            padding: 18px
+            min-width: 200px
+            @media (hover)
+              &:hover
+                border-radius: 12px
+          .make-review-btn
+            margin-bottom: 22px
+        &-list
+        &-item
+          margin-bottom: 60px
+          .content
+            margin-bottom: 20px
+
+            font-size: 15px
+            line-height: 1.8
+          .full-review-link
+            width: 150px
+            margin-bottom: 16px
+            padding: 12px 10px
+ 
+            border-radius: 18px
+
+            font-size: 11px
+            font-weight: 400
+            text-transform: uppercase
+          .info-row
+            display: flex
+
+            padding-top: 11px
+            justify-content: space-between
+            border-top: 1px solid #E6E6E6
+
+            font-style: italic
+            .name
+              padding-right: 10px
+
+              font-size: 12px
+              letter-spacing: 1px
+            .date
+              font-size: 10px
+              text-transform: uppercase
+
+    .right-col
+      .title-block
+        padding: 65px 50px
+
+        background-color: rgba(40, 88, 199, .1)
+      
+      .spec
+        color: #838383
+        font-size: 16px
+        font-style: italic
+        line-height: 1.6
+        letter-spacing: 1px
+      
+      .consult
+        &-row
+          display: flex
+          margin-left: 18px
+
+          padding: 28px 0px 28px
+          justify-content: space-between
+
+          border-bottom: 1px solid #E6E6E6
+          .reg-btn
+            min-width: 180px
+            padding: 16px 10px
+        &-block
+          position: relative
+          padding: 0px 20px
+          .title
+            margin-bottom: 5px
+
+            font-size: 14px
+            letter-spacing: .5px
+          .price
+            font-size: 23px
+            font-weight: 500
+          // &.first-consult-block
+          &:not(:first-child)
+            border-left: 1px solid #000
+
+      .about-doctor-block
+        margin-left: 18px
+
+        padding-top: 28px
+        padding-left: 20px
+        h2
+          margin-bottom: 16px
+
+          color: var(--title)
+        ul
+          margin-bottom: 20px
+          li
+            position: relative
+
+            padding-left: 12px
+
+            line-height: 1.8
+            &:after
+              position: absolute
+              content: ''
+              height: 4px
+              width: 4px
+              left: 0px
+              top: 13px
+
+              background-color: #000000
+              
+              border-radius: 50%
+
+  .doctors-section
+    margin-bottom: 60px
+
+    padding-top: 40px
+    .container
+      display: flex
+
+      flex-flow: column
+    h2
+      margin-bottom: 22px
+      
+      font-family: Tenor Sans
+      font-size: 14px
+      text-transform: uppercase
+    .doctors-list
+      display: block
+      width: calc(100% - 120px)
+      // width: auto
+      // margin: unset
+      margin: 0px auto 30px
+      // margin-bottom: 30px
+
+      flex-flow: unset
+      justify-content: unset
+      .slick-arrow
+        position: absolute
+        top: calc(50% - 27px)
+        height: 35px
+        width: 35px
+
+        font-size: 0px
+
+        border: 1px solid #C7C7C7
+
+        background-color: transparent
+        background-image: url(../img/arr_prev.svg)
+        background-repeat: no-repeat
+        background-position: center
+        background-size: 20px 14px
+
+        cursor: pointer
+        outline: none
+        transition: all .3s
+        z-index: 900
+        @media (hover)//, (min-width:0\0)
+          &:hover
+            height: 40px
+            width: 40px
+            top: calc(50% - 29.5px)
+        &.slick-prev
+          left: -60px
+          @media (hover)//, (min-width:0\0)
+            &:hover
+              left: -65px
+        &.slick-next
+          right: -60px
+          transform: rotate(180deg)
+          @media (hover)//, (min-width:0\0)
+            &:hover
+              right: -65px
+    .doctor-card
+      min-width: unset
+      justify-content: normal
+      .info-block
+        background-color: #D9D9D9
+
+
+
+
+

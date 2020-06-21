@@ -1,0 +1,237 @@
+.index
+  .main-screen
+    overflow: hidden
+    .service-block
+      position: relative
+      display: flex
+      
+      height: 576px
+      width: 50%
+
+      align-items: center
+      justify-content: center
+
+      background-repeat: no-repeat
+      background-position: center
+      background-size: cover
+
+      transition: all 1s
+      .bg-container
+        position: absolute
+        top: 0px
+        left: 0px
+        height: 100%
+        width: 100%
+        
+        z-index: 1
+        img,
+        video
+          height: 100%
+          width: 100%
+
+          object-fit: cover
+          object-position: center
+        .layer
+          height: 0px
+          width: 0px
+        video:not([src=""]) ~ .layer
+          position: absolute
+          top: 0px
+          left: 0px
+
+          height: 100%
+          width: 100%
+        img[src=""],
+        video:not([src=""]) + img
+          display: none
+        video[src=""]
+          display: none
+        video[src=""] + img[src=""] + .layer
+          position: absolute
+          top: 0px
+          left: 0px
+
+          height: 100%
+          width: 100%
+        
+      .inner-block
+        position: relative
+        display: block
+        max-width: 350px
+
+        border: 1px solid #3aFFFF
+
+        color: #fff
+
+        transition: all 0s
+
+        z-index: 100
+      .desc-block
+        padding: 15px 20px
+        display: block
+      .title
+        position: relative
+
+        padding-right: 60px
+
+        color: #fff
+        font-family: 'Tenor Sans'
+        font-size: 20px
+        line-height: 1.6
+        text-transform: uppercase
+
+        transition: all 0s ease-in-out
+        &::after
+          position: absolute
+          content: ''
+          height: 36px
+          width: 19px
+
+          top: calc(50% - 18px)
+          right: 0px
+
+          background-image: url(../img/arrow-right.svg)
+          background-repeat: no-repeat
+          background-size: 19px 36px
+          background-position: right center
+
+          transition: all .3s
+      .desc
+        margin-top: 20px
+        max-height: 280px
+
+        overflow: hidden
+
+        color: #fff
+        line-height: 1.8
+
+        transition: all 0s
+      .services-list
+        display: none
+        position: relative
+        transition: all 1s
+      &.item_1
+        .title
+          position: relative
+        .inner-block
+          width: 100%
+
+          transition: all 0s
+
+      &.item_2
+        .inner-block
+          transition: all 0s
+    
+    @media (hover) and (min-width: 992px)//, (min-width:0\0) and (min-width: 992px)
+      &:hover
+        .service-block
+          position: relative
+          width: 10%
+          
+          align-items: flex-start
+          .inner-block
+            display: none
+            width: 100%
+
+            padding: 14px 50px
+
+            border: none
+            .title
+              padding: 0px
+
+              font-size: 10px
+
+              transition: all .3s
+
+          &.item_1,
+          &.item_2
+            @media (hover) and (min-width: 992px)//, (min-width:0\0) and (min-width: 992px)
+              &:hover
+                position: relative
+                width: 90%
+
+                justify-content: flex-start
+
+                align-items: flex-start
+                .inner-block
+                  display: block
+                  height: 100%
+
+                  padding-top: 10px
+                  padding-bottom: 18px
+
+                  max-width: unset
+
+                  border: none
+
+                  margin-left: auto
+
+                  transition: left .5s, opacity .5s
+
+                .services-list
+                  position: absolute
+
+                  opacity: 0
+                  &.display
+                    display: flex
+                    position: relative
+                  &.shift
+                    opacity: 1
+                .title
+                  position: static
+                  margin-bottom: 25px
+
+                  padding: 0px
+
+                  font-size: 10px
+                  &::after
+                    height: 80px
+                    width: 80px
+                    top: calc(50% - 40px)
+
+
+                    border: 1px solid #3aFFFF
+
+                    background-position: center
+
+                    z-index: 100
+                .desc
+                  height: 0px
+                  margin: 0px
+                .service-item
+                  a
+                    &:hover
+                      color: #3aFFFF
+
+          &.item_1
+            @media (hover) and (min-width: 992px)//, (min-width:0\0) and (min-width: 992px)
+              &:hover
+                .inner-block
+                  padding-left: calc((100vw - 1120px)/2)
+                  .services-list
+                    left: -10%
+                    &.shift
+                      left: 0%
+
+                .title
+                  &:after
+                    right: -135px
+
+                    transform: rotate(180deg)
+          &.item_2
+            @media (hover) and (min-width: 992px)//, (min-width:0\0) and (min-width: 992px)
+              &:hover
+                .inner-block
+                  padding-left: calc((100vw - 1120px)/2 - 10% - 30px)
+                  .services-list
+                    padding-left: 20px
+                    right: -10%
+                    &.shift
+                      right: 0%
+                .title
+                  padding-left: 20px
+                  &:after
+                    left: -135px
+
+
+

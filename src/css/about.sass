@@ -1,0 +1,233 @@
+.about-us-page
+  .big-title
+    display: block
+
+    font-family: 'Tenor Sans'
+    font-size: 20px
+    letter-spacing: normal
+    text-transform: uppercase
+
+  .main-screen
+    display: flex
+
+    flex-flow: column
+
+    background-image: url(../img/about-main.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+
+    color: #fff
+    .content
+      display: flex
+      flex-basis: 100%
+      align-items: center
+
+      padding: 50px 0px 70px
+      h1
+        display: block
+        margin-bottom: 25px
+
+        font-family: 'Tenor Sans'
+        font-size: 20px
+        letter-spacing: normal
+        text-transform: uppercase
+      .desc-block
+        min-height: 140px
+        width: 100%
+
+        padding-right: 60px
+        p
+          font-size: 15px
+          letter-spacing: 1px
+          line-height: 1.8
+
+  .advantages-section
+    padding: 60px 0px
+    h2
+      margin-bottom: 40px
+
+      color: var(--title)
+    .advantages-list
+      display: flex
+
+      justify-content: space-between
+      .item
+        width: 30%
+
+        line-height: 2
+
+  .equipment-section
+    .equipment-slider
+      width: 95%
+      margin: auto
+
+      padding: 38px 0px 80px
+      .slick-slide 
+        margin: 0 15px
+      .item
+        display: flex
+        width: 30%
+
+        flex-flow: column
+        .img-container
+          display: flex
+          min-height: 500px
+
+          margin-bottom: 16px
+          width: 100%
+
+          border-radius: 10px
+          overflow: hidden
+          img
+            width: 100%
+            // height: 100%
+
+            object-fit: cover
+            object-position: center
+        .desc
+          margin-bottom: 25px
+
+          font-size: 15px
+        .department
+          display: flex
+          margin-right: auto
+
+          padding: 7px 12px
+          align-self: flex-start
+          align-items: center
+          justify-content: space-between
+
+          background-color: #24396E
+
+          color: #fff
+          font-size: 9px
+          font-weight: 400
+          letter-spacing: 1px
+          text-transform: uppercase
+      .slick-arrow
+        position: absolute
+        height: 35px
+        width: 35px
+        top: calc(250px - 17px)
+        
+        font-size: 0px
+
+        border: 1px solid #C7C7C7
+
+        background-color: transparent
+        background-repeat: no-repeat
+        background-position: center
+        background-size: 20px 14px
+        
+        cursor: pointer
+        outline: none
+        transition: all .3s
+        z-index: 900
+        @media (hover)//, (min-width:0\0)
+          &:hover
+            top: calc(250px - 19.5px)
+            height: 40px
+            width: 40px
+        &.slick-prev
+          left: -46px
+          background-image: url(../img/arr_prev.svg)
+          @media (hover)//, (min-width:0\0)
+            &:hover
+              left: -48.5px
+        &.slick-next
+          right: -46px
+          background-image: url(../img/arr_prev.svg)
+          transform: rotate(180deg)
+          @media (hover)//, (min-width:0\0)
+            &:hover
+              right: -48.5px
+        
+  .department-section
+    margin-bottom: 80px
+    h2
+      margin-bottom: 30px
+      color: #120A8F
+      text-align: center
+    .tmblr
+      &-row
+        display: flex
+
+        padding: 35px 0px
+        
+        background-color: var(--link)
+
+        transition: none
+        .container
+          display: flex
+
+          justify-content: space-between
+      &-item
+        display: flex
+        position: relative
+        margin-right: 20px
+
+        padding: 30px 116px 30px 40px
+        align-items: center
+        justify-content: center
+
+        color: #fff
+        font-family: Tenor Sans
+        font-size: 20px
+        text-transform: uppercase
+
+        border: 1px solid #3aFFFF
+
+        cursor: pointer
+        transition: all .3s
+        &::after
+          position: absolute
+          content: ''
+          height: 36px
+          width: 20px
+          top: calc(50% - 18px)
+          right: 40px
+
+          background-image: url(../img/arrow-right.svg)
+          background-repeat: no-repeat
+          background-position: right center
+          background-size: contain
+
+          transition: all .3s
+        &.active
+          &::after
+            transform: rotate(90deg)
+        @media (hover)//, (min-width:0\0)
+          &:hover
+            color: var(--title)
+    .tab
+      &-row        
+        background-color: #E6E6E6
+        
+        transition: none
+      &-item
+        display: none
+        transition: none
+        &[data-num="1"]
+          display: flex
+          display: block
+    
+    .services-list
+      display: flex
+
+      padding: 48px 0px
+      // justify-content: space-between
+    .service-item
+      a
+        max-width: unset
+        // width: max-content
+        color: var(--title)
+        &::after
+          background-image: url(../img/arrow-right-b.svg)
+        @media (hover)//, (min-width:0\0)
+          &:hover
+            color: var(--link)
+          
+
+
+

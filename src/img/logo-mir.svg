@@ -1,0 +1,14 @@
+<svg id="mir-logo" xmlns="http://www.w3.org/2000/svg" width="50.025" height="14.16" viewBox="0 0 50.025 14.16">
+  <g id="g5" transform="translate(0 0)">
+    <path id="path7" d="M13.48,0V.006a2.613,2.613,0,0,0-2.473,1.855C10.531,3.568,9.189,8.28,9.152,8.41H8.781S7.408,3.593,6.926,1.855A2.617,2.617,0,0,0,4.452,0H0V14.16H4.452V5.751h.371l2.6,8.41h3.092l2.6-8.4h.371v8.4h4.452V0Z" transform="translate(0 0)" fill="#0b2440" fill-rule="evenodd"/>
+  </g>
+  <g id="g9" transform="translate(19.849 0)">
+    <path id="path11" d="M330.894,0a2.494,2.494,0,0,0-1.917,1.484L325.823,8.41h-.371V0H321V14.16h4.2a2.567,2.567,0,0,0,1.979-1.484l3.092-6.926h.371v8.41H335.1V0Z" transform="translate(-321)" fill="#0b2440" fill-rule="evenodd"/>
+  </g>
+  <g id="g13" transform="translate(35.927 6.431)">
+    <path id="path15" d="M581,104v7.729h4.452v-4.514h4.823A4.817,4.817,0,0,0,594.82,104Z" transform="translate(-581 -104)" fill="#0b2440" fill-rule="evenodd"/>
+  </g>
+  <g id="g17" transform="translate(35.302 0)">
+    <path id="path24" d="M580.8,0h-9.9a7.113,7.113,0,0,0,5.132,5.565h0a7.114,7.114,0,0,0,1.861.247h7.631a4.75,4.75,0,0,0,.1-.989A4.821,4.821,0,0,0,580.8,0Z" transform="translate(-570.9)" fill="#0b2440" fill-rule="evenodd"/>
+  </g>
+</svg>

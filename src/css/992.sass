@@ -1,0 +1,227 @@
+@media screen and ( max-width: 991px )
+  body
+    padding-top: 137px
+    
+  .header
+    nav
+      display: flex 
+      position: fixed
+      height: 100%
+      width: 70%
+      top: 0px
+      left: -100%
+
+      flex-flow: column
+      justify-content: flex-start
+      align-items: center
+
+      padding: 50px 0px
+      
+      text-align: center
+
+      // background-color: rgba(34,86,170,1)
+      background-color: #fff
+
+      border-right: 2px solid rgba(34,86,170,1)
+
+      overflow-y: scroll
+      z-index: 900
+      &::-webkit-scrollbar
+        height: 0 !important
+      &.active
+        left: 0px
+      ul
+        margin: 0px 0px 40px
+        height: auto
+        justify-content: space-between
+
+        flex-flow: column
+        align-items: center
+        &::-webkit-scrollbar
+          width: 0 !important
+      .logo-block
+        margin-bottom: 20px
+        .logo-img-container
+          margin-right: 0px
+        a
+          &::after
+            display: none
+          @media (hover)//, (min-width:0\0)
+            &:hover
+              img
+                transform: scale(.95)
+      .schedule-block
+        margin-bottom: 40px
+
+        // color: #fff
+        color: rgba(34,86,170,1)
+        // color: #212529
+
+    .nav-row
+      a
+        // color: #fff
+        color: rgba(34,86,170,1)
+      li.submenu
+        & > a
+          padding-left: 0px
+          padding-right: 20px
+          &::before
+            right: 6px
+
+    .tel-block
+      // margin-bottom: auto
+      // flex-flow: column
+      align-items: center
+      .tel-link
+        padding: 5px
+        // color: #fff
+        color: rgba(34,86,170,1)
+        &::after
+          display: none
+        
+      .call-me-link
+        margin-bottom: 0px
+
+        padding: 5px
+        &::after
+          display: none
+    
+    .enroll-button
+      // margin-bottom: auto
+      // background-color: var(--link)
+
+  .footer
+    .main-row
+      padding-bottom: 50px
+      flex-flow: wrap
+      justify-content: flex-start
+    .logo-block
+      width: 100%
+      margin-bottom: 20px
+    .doctor-reg-btn
+      margin-right: 30px
+    .contacts-row
+      flex-flow: wrap
+    .schedule-block
+      margin-bottom: 40px
+
+  .doctors-section
+    .doctor-card
+      width: 100%
+      &:nth-child(4n + 3) .info-block,
+      &:nth-child(4n + 4) .info-block
+        background-color: transparent
+      &:nth-child(2n + 1) .info-block
+        background-color: #D9D9D9
+
+  .review-section
+    .review-list
+      max-width: 900px
+      margin: 0px 15px 55px
+      .slick-list
+        // width: 592px
+      .slick-track
+        display: block
+
+    .review-card
+      padding: 0px 30px
+      max-width: unset
+      // width: 281px!important
+      &:nth-child(2)
+        margin: unset
+
+  .doctors-section
+    .doctor-card
+      .img-container
+        min-width: unset
+  
+
+  .index
+    .discount-section
+      .content
+        .discount-slider
+          max-width: 900px
+    
+    // .main-screen
+    //   &:hover
+    //     .service-block.item_1
+    //       &:hover
+    //         .inner-block
+    //           padding-left: 20px
+
+    // .review-section
+      // .review-card
+        // &:nth-child(n+3)
+          // display: none
+  
+  .services-page
+    .main-screen
+      .content
+        .container
+          align-items: center
+          flex-flow: column
+
+          text-align: center
+        .desc-block
+          padding-right: 0px
+          padding-bottom: 40px
+          
+          border-right: none
+          border-bottom: 1px solid var(--link)
+        .info-block
+          padding: 40px 0px 0px
+          width: auto
+    .services-section
+      .services-list
+        .service-card
+          width: 30.333%
+    
+  .doctor-card-page
+    .card-section
+      .right-col
+        .consult-row
+          flex-flow: column
+        .consult-block
+          margin-bottom: 30px
+          &.first-consult-block
+            border-right: none
+          &:not(:first-child)
+            border-left: none
+    .doctors-section
+      h2
+        text-align: center
+      .doctor-card
+        .img-container
+          min-height: 320px
+      .doctors-list
+        .slick-arrow
+          top: calc(50% - 27px)
+
+
+    .doctors-section
+      .doctor-card
+        &:nth-child(4n + 4)
+          .info-block
+            background-color: #D9D9D9
+
+  .contacts-page
+    .main-screen
+      .img-container
+        display: none
+      .content
+        width: 100%
+      .content-item
+        &.btns-block
+          flex-flow: column
+          a
+            &:not(:last-child)
+              margin-right: 0px
+              margin-bottom: 20px
+
+  .about-us-page
+    .department-section
+      .tmblr-item
+        padding: 20px 90px 20px 20px
+
+        line-height: 1.4
+

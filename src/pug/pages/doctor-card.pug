@@ -1,0 +1,111 @@
+html(lang="en")
+  head
+    include ../includes/head.pug
+    link(rel="stylesheet" href="css/vendor/slick.css")
+    link(rel="stylesheet" href="css/style.css")
+    title Карточка врача
+  body.doctor-card-page
+    include ../includes/header.pug
+
+    main
+      section.breadcrumb-container
+        .container
+          .breadcrumb
+            li.breadcrumb-item
+              a(href="#") Главная
+            li.breadcrumb-item
+              a(href="#") Врачи
+            li.breadcrumb-item МАХОВИКОВА АННА ОЛЕГОВНА
+
+      section.card-section.doctor-card
+        .container
+          .main-info.row.no-gutters
+            .left-col.col-md-5
+              .img-container
+                img(src="img/doctor-full.jpg", alt="")
+                video(src="img/Clouds.mp4" loop="" muted="" autoplay="")
+                img(src="img/bg-services.jpg", alt="")
+              //- .review-block
+              //-   .title Отзывы
+              //-   .review-list
+              //-     .review-item
+              //-       .content Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident omnis ipsa, tempore numquam nobis sapiente. Aliquid nulla qui magnam cupiditate.
+              //-       a.full-review-link.green-btn(href="#") Весь отзыв
+              //-       .info-row
+              //-         .name Наталия Геннадьевна
+              //-         .date 5 февраля 2020
+              //-     .review-item
+              //-       .content Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident omnis ipsa, tempore numquam nobis sapiente. Aliquid nulla qui magnam cupiditate.
+              //-       a.full-review-link.green-btn(href="#") Весь отзыв
+              //-       .info-row
+              //-         .name Наталия Геннадьевна
+              //-         .date 5 февраля 2020
+
+              //-   a.make-review-btn.blue-btn(href="#") Оставить отзыв
+              //-   a.all-reviews-btn.green-btn(href="#") Все отзывы
+
+            .right-col.col-md-7
+              .title-block
+                h1 Врач 1
+                .spec Врач функциональной диагностики, главный врач, кардиолог
+              .consult-row.d-flex
+                .consult-block.first-consult-block
+                  .title Первичная консультация
+                  .price 2000 руб
+                .consult-block.secondary-consult-block
+                  .title Повторная консультация
+                  .price 1600 руб
+                a.blue-btn.reg-btn(href="#modal-reg" data-toggle="modal" data-name="1") Записаться на приём
+
+              .about-doctor-block
+                h2 Образование
+                ul
+                  li Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores possimus quo earum quisquam dignissimos ab nesciunt iste eius unde vitae.
+                  li Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores possimus quo earum quisquam dignissimos ab nesciunt iste eius unde vitae.
+                h2 Заболевания, которыми занимается врач
+                ul
+                  li Lorem.
+                  li Sunt?
+                  li Quos?
+                  li Pariatur!
+                  li Deleniti.
+
+        include ../includes/review-section.pug
+
+      section.doctors-section
+        .container
+          h2 Врачи по специализации
+          .doctors-list.doctors-slider
+            .doctor-card
+              .img-container
+                img(src="img/doctor_1.jpg", alt="")
+              .info-block
+                h3 Врач 1
+                .specialization Кардиолог, Терапевт, Врач УЗД
+                a.blue-btn.reg-btn(href="#modal-reg" data-toggle="modal" data-name="1") Записаться на приём
+            .doctor-card
+              .img-container
+                img(src="img/doctor_1.jpg", alt="")
+              .info-block
+                h3 Врач 2
+                .specialization Кардиолог, Терапевт, Врач УЗД
+                a.blue-btn.reg-btn(href="#modal-reg" data-toggle="modal" data-name="2") Записаться на приём
+            .doctor-card
+              .img-container
+                img(src="img/doctor_1.jpg", alt="")
+              .info-block
+                h3 Врач 3
+                .specialization Кардиолог, Терапевт, Врач УЗД
+                a.blue-btn.reg-btn(href="#modal-reg" data-toggle="modal" data-name="3") Записаться на приём
+          a.green-btn.show-doctors-btn(href="#") Все врачи
+
+      include ../includes/reg-block.pug
+
+    include ../includes/footer.pug
+
+    include ../includes/modal.pug
+
+    script(src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js")
+    script(src="js/vendor/slick.min.js")
+    

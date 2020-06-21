@@ -1,0 +1,133 @@
+.contacts-page
+  .main-screen
+    position: relative
+    .img-container
+      position: absolute
+      display: flex
+      width: 42%
+      height: 100%
+
+      overflow: hidden
+      img
+        width: 100%
+
+        object-fit: cover
+        object-position: right center
+
+    .container
+      height: 100%
+
+    .content
+      display: flex
+      width: 58%
+      margin-left: auto
+
+      padding: 0px 0px 40px 16px
+      flex-flow: wrap
+      justify-content: space-between
+
+    .content-item
+      margin-top: 40px
+      .title
+        display: flex
+        min-height: 26px
+        margin-bottom: 12px
+
+        padding-left: 36px
+        align-items: center
+
+        color: var(--title)
+        font-family: Tenor Sans
+        font-size: 16px
+        letter-spacing: 1px
+
+        background-repeat: no-repeat
+        background-position: left center
+        background-size: contain
+      .info
+        display: flex
+
+        font-size: 14px
+        line-height: 1.6
+        letter-spacing: 1px
+        .item
+          &:not(:last-child)
+            margin-right: 60px
+          &_title
+            color: var(--link)
+      
+      &.adress-block
+        .title
+          background-image: url(../img/ico-pin.svg)
+      
+      &.schedule-block
+        .title
+          background-image: url(../img/ico-clock.svg)
+      
+      &.tel-block
+        .title
+          background-image: url(../img/ico-phone.svg)
+          background-size: auto 22px
+      
+      &.route-block
+        margin-right: auto
+        .title
+          background-image: url(../img/ico-bus.svg)
+          background-size: auto 24px
+
+      &.email-block
+        .title
+          background-image: url(../img/ico-envelope.svg)
+          background-size: 25px 19px
+      
+      &.btns-block
+        display: flex
+
+        align-items: center
+        a
+          width: 205px
+
+          padding: 17px 18px
+          &.manager-msg-btn
+            padding-left: 46px
+
+            font-size: 12px
+
+            background-image: url(../img/pen.svg)
+            background-position: 19px center
+            background-repeat: no-repeat
+            background-size: 22px
+          &:not(:last-child)
+            margin-right: 22px
+          @media (hover)
+            &:hover
+              border-radius: 12px
+
+      &.soc-block
+        display: flex
+        width: 100%
+        margin-bottom: 17px
+
+        justify-content: flex-end
+        a
+          position: relative
+          top: 0px
+          display: inline-flex
+          height: 30px
+          width: 30px
+
+          border-radius: 50%
+
+          overflow: hidden
+          &:not(:last-child)
+            margin-right: 9px
+
+          @media (hover)//, (min-width:0\0)
+            &:hover
+              top: -3px
+          img
+            object-fit: cover
+            object-position: center
+
+
+
